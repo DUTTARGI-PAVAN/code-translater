@@ -57,16 +57,22 @@ function LoginPage() {
         <form onSubmit={handleSubmit}>
           {isSignUp && (
             <input
-              type="text" placeholder="Name" value={name}
+              type="text"
+              placeholder="Name"
+              value={name}
               onChange={(e) => setName(e.target.value)}
             />
           )}
           <input
-            type="email" placeholder="Email" value={email}
+            type="email"
+            placeholder="Email"
+            value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
-            type="password" placeholder="Password" value={password}
+            type="password"
+            placeholder="Password"
+            value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
           <button type="submit" disabled={loading}>
@@ -79,8 +85,11 @@ function LoginPage() {
         <GoogleLogin
           onSuccess={handleGoogleSuccess}
           onError={() => toast.error("Google login failed.")}
-          theme="outline" shape="rectangular" size="large"
-          text="continue_with" width="300"
+          theme="outline"
+          shape="rectangular"
+          size="large"
+          text="continue_with"
+          width="300"
         />
 
         <p>

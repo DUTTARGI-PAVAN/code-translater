@@ -1,0 +1,108 @@
+.empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #555;
+  font-size: 1rem;
+}
+
+.empty-state span {
+  color: #6c63ff;
+  font-weight: 600;
+}
+
+.output-editor {
+  height: 100%;
+}
+
+.output-analysis {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.info-cards {
+  display: flex;
+  gap: 16px;
+}
+
+.info-card {
+  flex: 1;
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-label {
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #6c63ff;
+}
+
+.analysis-explanation {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.analysis-explanation h4 {
+  color: #aaa;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.analysis-explanation p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.output-optimize {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.suggestions-box {
+  padding: 16px 20px;
+  background: #1a1a2e;
+  border-top: 1px solid #2a2a4a;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.suggestions-box h4 {
+  color: #aaa;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.suggestions-box p {
+  color: #ccc;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.output-explain {
+  padding: 20px;
+  overflow-y: auto;
+  height: 100%;
+  color: #ccc;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
