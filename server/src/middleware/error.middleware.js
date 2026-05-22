@@ -4,5 +4,7 @@ export const notFoundHandler = (req, res, next) => {
 
 export const errorHandler = (err, req, res, next) => {
   console.error("Error:", err.message);
-  res.status(500).json({ success: false, message: "Internal server error." });
+  const statusCode = err.statusCode || 500;
+  const message = statusCode === 500 ? "Internal server error." : err.message;
+  res.status(statusCode).json({ success: false, message });
 };

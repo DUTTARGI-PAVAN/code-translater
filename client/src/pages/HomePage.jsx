@@ -60,8 +60,8 @@ function HomePage() {
       };
       const data = await fns[activeAction]();
       setResult(data);
-    } catch {
-      toast.error("Something went wrong. Please try again.");
+    } catch (err) {
+      toast.error(err.response?.data?.message || "Something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }
